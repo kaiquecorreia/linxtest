@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #707070;
+  height: 400px;
+  color: #fff;
+}
+
+
+
+.header-background {
+  bottom: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 120px solid #fff;
+  border-right: 100vw solid transparent;
+}
