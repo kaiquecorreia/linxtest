@@ -1,10 +1,21 @@
 * {
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0;
   font-family: 'Helvetica Neue';
 }
+h1 {
+  font-weight: normal;
+}
 
+/* UTILS CLASS */
+.bottom-space-20 {
+  margin-bottom: 20px;
+}
+.bottom-space-30 {
+  margin-bottom: 20px;
+}
+.top-space-20 {
+  margin-top: 20px;
+}
+/* END UTILS CLASS */
 .header {
   display: flex;
   flex-direction: column;
@@ -17,7 +28,6 @@
 }
 
 .header-title {
-  font-weight: normal;
   margin: 69px 0 24px 0;
   font-size: 1.25rem;
 }
@@ -52,4 +62,43 @@
   border-radius: 4px;
   font-size: 0.875rem;
   color: #888888;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  color: #888888;
+}
+
+.first-section-info {
+  margin-right: 60px;
+  width: 520px;
+}
+
+.first-section-title {
+  text-align: left;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+.first-section-form {
+  display: flex;
+  width: 340px;
+  flex-direction: column;
+  text-align: left;
+}
+.first-section-form-label {
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+}
+.first-section-form-input {
+  width: 340px;
+  height: 30px;
+  border: 1px solid #707070;
+}
+.first-section-form-button {
+  width: 340px;
+  height: 39px;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  margin-top: 23px;
 }
