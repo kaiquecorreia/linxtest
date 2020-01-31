@@ -2,10 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="theme-color" content="#2f2f2f" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#2f2f2f" />
     <meta name="msapplication-navbutton-color" content="#2f2f2f" />
@@ -26,12 +23,9 @@
   <body class="main">
     <header id="header" class="header">
       <span class="header-background"></span>
-      <h1 class="header-title">
-        uma seleção de produtos<br /><strong> especial para você</strong>
-      </h1>
+      <h1 class="header-title">uma seleção de produtos<br /><strong> especial para você</strong></h1>
       <h2 class="header-subtitle">
-        Todos os produtos desta lista foram selecionados a partir da sua
-        navegação. Aproveite!
+        Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
       </h2>
       <div class="header-button-wrapper">
         <button class="header-button">Conheça a Linx</button>
@@ -40,53 +34,95 @@
         <button class="header-button">Compartilhe</button>
       </div>
     </header>
-    <section id="first-section" class="first-section">
-      <div class="first-section-info">
-        <h1 class="first-section-title bottom-space-30">
-          Ajude o algorítimo a ser mais certeiro
-        </h1>
-        <p class="first-section-text bottom-space-20">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris
-          rhoncus erat sed interdum dignissim. Suspendisse semper pretium
-          consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus
-          quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia
-          euismod augue vel egestas. Class aptent taciti sociosqu ad litora
-          torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel
-          urna tortor. Vivamus et arcu non felis tristique eleifend.
-        </p>
-        <p>
-          Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum
-          ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed,
-          egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut
-          neque mattis, consequat velit ut, ultrices orci. Nulla varius
-          elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra,
-          magna ac luctus commodo, odio ante suscipit libero, at mattis augue
-          est vel metus.
-        </p>
+    <div class="container">
+      <div class="container-wrapper">
+        <section id="first-section" class="first-section">
+          <div class="first-section-info">
+            <h1 class="first-section-title bottom-space-30">
+              Ajude o algorítimo a ser mais certeiro
+            </h1>
+            <p class="first-section-text bottom-space-20">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu
+              urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit
+              amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et
+              arcu non felis tristique eleifend.
+            </p>
+            <p>
+              Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar
+              purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci.
+              Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante
+              suscipit libero, at mattis augue est vel metus.
+            </p>
+          </div>
+          <form class="first-section-form" action=" ">
+            <label class="first-section-form-label" for="name">Seu Nome:</label>
+            <input class="first-section-form-input" type="text" name="name" id="name" />
+
+            <label class="first-section-form-label top-space-20 " for="email">E-mail:</label>
+            <input class="first-section-form-input" type="email" name="email" id="email" />
+
+            <label class="first-section-form-label top-space-20 " for="cpf">CPF:</label>
+            <input class="first-section-form-input" type="text" name="cpf" id="cpf" />
+            <div class="top-space-20">
+              <input type="radio" name="genre" id="male" value="male" checked />
+              <label class="first-section-form-label" for="male">Masculino</label>
+
+              <input type="radio" name="genre" id="female" value="female" />
+              <label class="first-section-form-label" for="male">Feminino</label>
+            </div>
+            <button class="first-section-form-button" type="submit">
+              Enviar
+            </button>
+          </form>
+        </section>
+        <section id="second-section" class="second-section">
+          <div class="title-section-top">
+            <hr class="section-line" />
+            <h1 class="second-section-title">Sua seleção especial</h1>
+            <hr class="section-line" />
+          </div>
+          <div id="second-section-product-list" class="second-section-product-list">
+            <!-- PRODUDOS SÃO LISTADOS AQUI -->
+          </div>
+          <div class="button-section-wrapper">
+            <button class="button-section-default">
+              Ainda mais produtos aqui!
+            </button>
+          </div>
+        </section>
+        <section class="third-section">
+          <div class="title-section-top">
+            <hr class="section-line" />
+            <h1 class="third-section-title">Compartilhe a novidade</h1>
+            <hr class="section-line" />
+          </div>
+          <h2 class="third-section-subtitle">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h2>
+          <form class="third-section-form" action="">
+            <div class="third-section-wrapper-control">
+              <label class="third-section-form-label" for="friendname">Nome do seu amigo:</label>
+              <input class="third-section-form-input" type="text" name="friendname" id="friendname" />
+            </div>
+            <div class="third-section-wrapper-control">
+              <label class="third-section-form-label" for="friendemail">E-mail:</label>
+              <input class="third-section-form-input" type="text" name="friendemail" id="friendemail" />
+            </div>
+          </form>
+          <div class="third-section-button button-section-wrapper">
+            <button class="button-section-default">
+              Enviar Agora
+            </button>
+          </div>
+        </section>
       </div>
-      <form class="first-section-form" action=" ">
-        <label class="first-section-form-label" for="name">Seu Nome:</label>
-        <input class="first-section-form-input" type="text" name="name" id="name" />
-
-        <label class="first-section-form-label top-space-20 " for="email" >E-mail:</label>
-        <input class="first-section-form-input" type="email" name="email" id="email" />
-
-        <label class="first-section-form-label top-space-20 " for="cpf">CPF:</label>
-        <input class="first-section-form-input" type="text" name="cpf" id="cpf" />
-        <div class="top-space-20">
-          <input type="radio" name="genre" id="male" value="male" checked/>
-          <label class="first-section-form-label" for="male">Masculino</labelclass="first-section-form-label">
-
-          <input type="radio" name="genre" id="female" value="female" />
-          <label class="first-section-form-label" for="male">Feminino</label>
-        </div>
-        <button class="first-section-form-button" type="submit">Enviar</button>
-      </form>
-    </section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    </div>
+    <footer class="footer">
+      <span class="footer-background"></span>
+      <p class="footer-text">Testando suas habilidades em HTML, CSS e JS.</p>
+      <p class="footer-text">Linx Impulse</p>
+      <p class="footer-text">2019</p>
+      <div>
+    </footer>
     <script src="./scripts/app.js"></script>
   </body>
 </html>
