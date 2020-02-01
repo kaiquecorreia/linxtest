@@ -10,16 +10,18 @@ function app() {
       const newPrice = removeCharFromNumber(price);
       const installment = (newPrice / installmentTimes).toFixed(2);
       list += `<div class="second-section-product">
+                <div>
                 <img class="second-section-product-image"
                   src="${picture}"
                   alt=""
                   srcset=""
                 />
-                
+                </div>
+                <div class"second-section-infos-wrapper">
                 <p class="second-section-product-name second-section-product-infos">
                   ${name}
                 </p>
-                <div class="second-sections-info-wrapper">
+                <div class="second-sections-product-description-wrapper">
                 <p class="second-section-product-description second-section-product-infos">
                   ${description}
                 </p>
@@ -36,7 +38,7 @@ function app() {
                 <button class="second-section-product-button second-section-product-infos">
                   Comprar
                 </button>
-               
+                </div>
               </div>`;
     });
 

@@ -15,6 +15,7 @@
     <meta name="author" content="Kaique Correia" />
 
     <!-- build:css css/style.css -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- endbuild -->
@@ -23,15 +24,26 @@
   <body class="main">
     <header id="header" class="header">
       <span class="header-background"></span>
-      <h1 class="header-title">uma seleção de produtos<br /><strong> especial para você</strong></h1>
-      <h2 class="header-subtitle">
-        Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
-      </h2>
-      <div class="header-button-wrapper">
-        <button class="header-button">Conheça a Linx</button>
-        <button class="header-button">Ajude o algorítimo</button>
-        <button class="header-button">Seus produtos</button>
-        <button class="header-button">Compartilhe</button>
+      <div class="header-info-wrapper">
+        <h1 class="header-title">uma seleção de produtos<br /><strong> especial para você</strong></h1>
+        <h2 class="header-subtitle">
+          Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
+        </h2>
+      </div>
+
+      <div class="header-button-container">
+        <div class="header-button-wrapper">
+          <button class="header-button">Conheça a Linx</button>
+        </div>
+        <div class="header-button-wrapper">
+          <button class="header-button">Ajude o algorítimo</button>
+        </div>
+        <div class="header-button-wrapper">
+          <button class="header-button">Seus produtos</button>
+        </div>
+        <div class="header-button-wrapper">
+          <button class="header-button">Compartilhe</button>
+        </div>
       </div>
     </header>
     <div class="container">
@@ -48,7 +60,7 @@
               aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et
               arcu non felis tristique eleifend.
             </p>
-            <p>
+            <p class="first-section-text">
               Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar
               purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci.
               Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante
@@ -99,13 +111,15 @@
           </div>
           <h2 class="third-section-subtitle">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h2>
           <form class="third-section-form" action="">
-            <div class="third-section-wrapper-control">
-              <label class="third-section-form-label" for="friendname">Nome do seu amigo:</label>
-              <input class="third-section-form-input" type="text" name="friendname" id="friendname" />
-            </div>
-            <div class="third-section-wrapper-control">
-              <label class="third-section-form-label" for="friendemail">E-mail:</label>
-              <input class="third-section-form-input" type="text" name="friendemail" id="friendemail" />
+            <div class="third-section-control">
+              <div class="third-section-wrapper-control">
+                <label class="third-section-form-label" for="friendname">Nome do seu amigo:</label>
+                <input class="third-section-form-input" type="text" name="friendname" id="friendname" />
+              </div>
+              <div class="third-section-wrapper-control">
+                <label class="third-section-form-label" for="friendemail">E-mail:</label>
+                <input class="third-section-form-input" type="text" name="friendemail" id="friendemail" />
+              </div>
             </div>
           </form>
           <div class="third-section-button button-section-wrapper">
@@ -121,7 +135,6 @@
       <p class="footer-text">Testando suas habilidades em HTML, CSS e JS.</p>
       <p class="footer-text">Linx Impulse</p>
       <p class="footer-text">2019</p>
-      <div>
     </footer>
     <script src="./scripts/app.js"></script>
   </body>
