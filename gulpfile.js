@@ -1,27 +1,7 @@
 //initialize all of our variables
-var
-  concat,
-  gulp,
-  gutil,
-  uglify,
-  imagemin,
-  minifyCSS,
-  browserSync,
-  autoprefixer,
-  gulpSequence,
-  shell,
-  sourceMaps,
-  plumber;
+var concat, gulp, gutil, uglify, imagemin, minifyCSS, browserSync, autoprefixer, gulpSequence, shell, sourceMaps, plumber;
 
-var autoPrefixBrowserList = [
-  'last 2 version',
-  'safari 5',
-  'ie 8',
-  'ie 9',
-  'opera 12.1',
-  'ios 6',
-  'android 4',
-];
+var autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
 
 //load all of our dependencies
 //add more here if you want to include more libraries
@@ -56,9 +36,7 @@ gulp.task('images', function(tmp) {
     .src(['app/images/*.jpg', 'app/images/*.png'])
     //prevent pipe breaking caused by errors from gulp plugins
     .pipe(plumber())
-    .pipe(
-      imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }),
-    )
+    .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
     .pipe(gulp.dest('app/images'));
 });
 
@@ -150,12 +128,6 @@ gulp.task('styles-deploy', function() {
     gulp
       .src('app/styles/css/init.css')
       .pipe(plumber())
-      //include css includes folder
-      .pipe(
-        sass({
-          includePaths: ['app/styles/css'],
-        }),
-      )
       .pipe(
         autoprefixer({
           browsers: autoPrefixBrowserList,
@@ -220,13 +192,7 @@ gulp.task('clean', function() {
 
 //create folders using shell
 gulp.task('scaffold', function() {
-  return shell.task([
-    'mkdir dist',
-    'mkdir dist/fonts',
-    'mkdir dist/images',
-    'mkdir dist/scripts',
-    'mkdir dist/styles',
-  ]);
+  return shell.task(['mkdir dist', 'mkdir dist/fonts', 'mkdir dist/images', 'mkdir dist/scripts', 'mkdir dist/styles']);
 });
 
 //this is our master task when you run `gulp` in CLI / Terminal
@@ -244,14 +210,4 @@ gulp.task('default', ['browserSync', 'scripts', 'styles'], function() {
 });
 
 //this is our deployment task, it will set everything for deployment-ready files
-gulp.task(
-  'deploy',
-  gulpSequence(
-    'clean',
-    'scaffold',
-    ['scripts-deploy', 'styles-deploy', 'images-deploy'],
-    'html-deploy',
-  ),
-);
-
-
+gulp.task('deploy', gulpSequence('clean', 'scaffold', ['scripts-deploy', 'styles-deploy', 'images-deploy'], 'html-deploy'));
