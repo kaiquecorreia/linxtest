@@ -1,5 +1,5 @@
-* {
-  font-family: 'Helvetica Neue';
+html {
+  font-family: 'Raleway', sans-serif;
 }
 h1 {
   font-weight: normal;
@@ -126,6 +126,7 @@ h1 {
   color: #888888;
   font-size: 0.75rem;
   font-weight: normal;
+  line-height: 16px;
 }
 .first-section-info {
   margin-right: 60px;
