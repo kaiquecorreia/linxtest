@@ -4,7 +4,9 @@ html {
 h1 {
   font-weight: normal;
 }
-
+button{
+  cursor: pointer;
+}
 /* UTILS CLASS */
 .bottom-space-20 {
   margin-bottom: 20px;

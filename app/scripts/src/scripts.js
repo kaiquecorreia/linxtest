@@ -13,8 +13,8 @@ function app() {
                 <div>
                 <img class="second-section-product-image"
                   src="${picture}"
-                  alt=""
-                  srcset=""
+                  alt=" ${name}"
+                  loading="lazy"
                 />
                 </div>
                 <div class"second-section-infos-wrapper">
