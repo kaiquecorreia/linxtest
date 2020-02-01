@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: #707070;
+  height: 293px;
+  color: #fff;
+}
+.footer-background {
+  top: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 120px solid #fff;
+  border-right: 100vw solid transparent;
+}
+.footer-text {
+  font-size: 0.75rem;
+  line-height: 22px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    height: 157px;
+  }
+  .footer-background {
+    border-top: 40px solid #fff;
+  }
+}
