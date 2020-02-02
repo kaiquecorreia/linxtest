@@ -25,3 +25,8 @@ Ubuntu e MacOSX.
 ## Páginas hospedadas hospedada
 - https://kaiquecorreia.github.io/linxtest/
 - https://kaiquecorreia.github.io/linxtest/email
+
+## Deploy
+- Para realizar o deploy na hospedagem foi utilizado o Gulp;
+- Para gerar o build para deploy execute o comando yarn deploy;
+- A build do projeto estará dentro da pasta linxtest/docs;
