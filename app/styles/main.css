@@ -29,3 +29,27 @@ button {
     width: 100%;
   }
 }
+::placeholder {
+  font-weight: normal;
+  color: #ccc;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-weight: normal;
+  color: #ccc;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: normal;
+  color: #ccc;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-weight: normal;
+  color: #ccc;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: normal;
+  color: #ccc;
+}
