@@ -1,0 +1,38 @@
+.bottom-space-20 {
+  margin-bottom: 20px;
+}
+.bottom-space-30 {
+  margin-bottom: 20px;
+}
+.top-space-20 {
+  margin-top: 20px;
+}
+.section-line {
+  width: 100%;
+  height: 1px;
+  background: #888888;
+  margin: auto 0;
+  border: none;
+}
+.title-section-top {
+  display: flex;
+  justify-content: center;
+}
+.button-section-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.button-section-default {
+  width: 260px;
+  height: 39px;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #888888;
+}
+@media only screen and (max-width: 767px) {
+  .section-line {
+    width: calc(100% / 3);
+  }
+}
